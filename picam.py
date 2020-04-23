@@ -29,14 +29,14 @@ file
 argument = "raspistill -o photo.jpg -t 0" # command to take photo
 filename = "photo.jpg" 
 
-logo1 = pygame.image.load("/home/PiCam/PiJuice/pijuice small.jpg") # load pijuice logo
+logo1 = pygame.image.load("/home/pi/PiCam/PiJuice/pijuice small.jpg") # load pijuice logo
 logo2 = pygame.transform.scale(logo1,(320, 100)) # transform pijuice logo to fit screen
 
 BACKDISPLAY.fill(WHITE) # set a white background
 BACKDISPLAY.blit(logo2, (0, 70)) # position logo in centre of screen
 pygame.display.flip() 
 
-icon1 = pygame.image.load("/home/PiCam/PiJuice/icon.jpg") # load pijuice icon
+icon1 = pygame.image.load("/home/pi/PiCam/PiJuice/icon.jpg") # load pijuice icon
 icon2 = pygame.transform.scale(icon1,(200, 210)) # transform pijuice icon to fit screen
 
 while True:
